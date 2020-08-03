@@ -23,7 +23,7 @@
 # *not* include it on all devices, so it is safe even with hardware-specific
 # components.
 
-LOCAL_PATH := device/oneplus/instantnoodle
+LOCAL_PATH := device/oneplus/avicii
 
 # Architecture
 TARGET_ARCH := arm64
@@ -42,7 +42,7 @@ ENABLE_CPUSETS := true
 ENABLE_SCHEDBOOST := true
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := kona
+TARGET_BOOTLOADER_BOARD_NAME := lito
 TARGET_NO_BOOTLOADER := true
 TARGET_USES_UEFI := true
 
@@ -77,9 +77,9 @@ BOARD_MKBOOTIMG_ARGS += --dtb $(TARGET_PREBUILT_DTB)
 
 
 # Platform
-TARGET_BOARD_PLATFORM := kona
-TARGET_BOARD_PLATFORM_GPU := qcom-adreno650
-QCOM_BOARD_PLATFORMS += kona
+TARGET_BOARD_PLATFORM := lito
+TARGET_BOARD_PLATFORM_GPU := qcom-adreno620
+QCOM_BOARD_PLATFORMS += lito
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 262144
@@ -139,8 +139,8 @@ AB_OTA_UPDATER := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_MAX_BRIGHTNESS := 1023
 TW_DEFAULT_BRIGHTNESS := 420
-TW_Y_OFFSET := 89
-TW_H_OFFSET := -89
+TW_Y_OFFSET := 93
+TW_H_OFFSET := -93
 TW_THEME := portrait_hdpi
 TARGET_RECOVERY_DEVICE_MODULES += android.hardware.boot@1.0
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /config/usb_gadget/g1/functions/mass_storage.0/lun.%d/file

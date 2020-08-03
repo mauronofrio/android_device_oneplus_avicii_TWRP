@@ -512,19 +512,19 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl" optional="false">
-        <name>vendor.display.config</name>
-        <version>1.15</version>
+    <hal format="hidl" optional="true">
+        <name>vendor.nxp.eventprocessor</name>
+        <version>1.0</version>
         <interface>
-            <name>IDisplayConfig</name>
+            <name>INxpEseEvtProcessor</name>
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl" optional="false">
-        <name>vendor.goodix.hardware.biometrics.fingerprint</name>
-        <version>2.1</version>
+    <hal format="hidl" optional="true">
+        <name>vendor.nxp.nxpese</name>
+        <version>1.0</version>
         <interface>
-            <name>IGoodixFingerprintDaemon</name>
+            <name>INxpEse</name>
             <instance>default</instance>
         </interface>
     </hal>
@@ -544,7 +544,7 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl" optional="false">
+    <hal format="hidl" optional="true">
         <name>vendor.oneplus.fingerprint.extension</name>
         <version>1.0</version>
         <interface>
@@ -581,14 +581,6 @@
         <version>2.1</version>
         <interface>
             <name>IQtiComposer</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="false">
-        <name>vendor.qti.spu</name>
-        <version>1.0</version>
-        <interface>
-            <name>ISPUManager</name>
             <instance>default</instance>
         </interface>
     </hal>
@@ -3038,14 +3030,6 @@
             <value type="tristate">y</value>
         </config>
         <config>
-            <key>CONFIG_MEMCG</key>
-            <value type="tristate">y</value>
-        </config>
-        <config>
-            <key>CONFIG_MEMCG_SWAP</key>
-            <value type="tristate">y</value>
-        </config>
-        <config>
             <key>CONFIG_MMU</key>
             <value type="tristate">y</value>
         </config>
@@ -3391,6 +3375,10 @@
         </config>
         <config>
             <key>CONFIG_PROFILING</key>
+            <value type="tristate">y</value>
+        </config>
+        <config>
+            <key>CONFIG_PSI</key>
             <value type="tristate">y</value>
         </config>
         <config>

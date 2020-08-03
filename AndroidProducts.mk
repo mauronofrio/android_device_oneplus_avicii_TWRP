@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_instantnoodle.mk
+    $(LOCAL_DIR)/omni_avicii.mk
 
 COMMON_LUNCH_CHOICES := \
-    omni_instantnoodle-user \
-    omni_instantnoodle-userdebug \
-    omni_instantnoodle-eng
+    omni_avicii-user \
+    omni_avicii-userdebug \
+    omni_avicii-eng

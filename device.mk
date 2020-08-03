@@ -1,8 +1,8 @@
 
-LOCAL_PATH := device/oneplus/instantnoodle
+LOCAL_PATH := device/oneplus/avicii
 
 # define hardware platform
-PRODUCT_PLATFORM := kona
+PRODUCT_PLATFORM := lito
 
 #TEST
 # A/B support
@@ -26,8 +26,8 @@ PRODUCT_PACKAGES += \
     android.hardware.boot@1.0-impl-wrapper.recovery \
     android.hardware.boot@1.0-impl-wrapper \
     android.hardware.boot@1.0-impl-recovery \
-    bootctrl.kona \
-    bootctrl.kona.recovery \
+    bootctrl.lito \
+    bootctrl.lito.recovery \
 
 PRODUCT_HOST_PACKAGES += \
     libandroidicu
